@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Bootstrap Components</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Creates the drop down menu -->
+    <nav class="navbar">
+      <div class="container">
+        <header class="header">
+          <h1>Latitude</h1>
+        </header>
+      <ul>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html" >Humidity</a>
+              <a class="dropdown-item" href='cloudiness.html'>Cloudines</a>
+              <a class="dropdown-item" href='windspeed.html'>Wind Speed</a>
+            </div>
+          </li>
+          <li>
+            <a href="comparison.html">Comparison</a>
+          </li>
+          <li>
+            <a href="data.html">Data</a>
+          </li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br><br>
+    <!-- Add the columns-->
+    <!-- Our rows function in containers (grid created). -->
+    <div class="container">
+      <div class="row">
+        <!-- One third of screen (4/12) -->
+        <div class="col-md-8">
+          <section id="comparison_page">
+          <section id="figure">
+              <h2 id="landing">Wind Speed<br><br></h2>
+              <img id="comparison_image" src="Resources/assets/images/Fig1.png" alt="Your Name" style="width:100%"><br><br>
+            </section>
+            <p>Latitude and Wind Speed shows no visible relationship. The correlation between these two parameters are visibly low based on the data analysis done on the latitude of the cities provided.</p> <br>
+        </section>
+        </div>
+        <div class="col-md-4">
+          <setion id="comparison_images">
+            <section id="images">
+            <h2>Visualizations<br><br></h2>
+            <div class="row">
+              <!-- One third of screen (4/12) -->
+              <div class="col-md-6">
+                <img src="Resources/assets/images/Fig1.png" alt="Latitude vs Max Temperature" style="width:100%" onclick="location.href='temperature.html'">
+              </div>
+              <div class="col-md-6">
+                <img src="Resources/assets/images/Fig2.png" alt="Latitude vs Humidity" style="width:100%" onclick="location.href='humidity.html'">
+              </div>
+            </div>
+            <br><br>
+            <div class="row">
+              <!-- One third of screen (4/12) -->
+              <div class="col-md-6">
+                <img src="Resources/assets/images/Fig3.png" alt="Latitude vs Cloudiness" style="width:100%" onclick="location.href='cloudiness.html'">
+              </div>
+              <div class="col-md-6">
+                <img src="Resources/assets/images/Fig4.png" alt="Latitude vs Wind Speed" style="width:100%" onclick="location.href='windspeed.html'">
+              </div>
+            </div> <!-- end of div class = row-->
+          </section>
+          </section>
+      </div>
+      </div>
+    </div>
+  <footer>
+    <br><h4>Copyright</h4>
+    <p>Trilogy Education Services &#169 2020. All Rights Reserved.</p>
+  </footer>
+  </body>
+  
+</html>
